@@ -2,6 +2,7 @@
 #macro TILE_SIZE 32
 
 // Global Variables
+global.unlocked = 0;
 
 global.targetRoom = -1;
 global.targetX = -1;

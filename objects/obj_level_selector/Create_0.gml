@@ -1,5 +1,4 @@
 /// @description Insert description here
-global.unlocked = 3;
 world = 0;
 
 gui_width = display_get_gui_width();
