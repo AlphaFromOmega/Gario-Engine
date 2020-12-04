@@ -1,8 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sta_player_hit()
+function sta_player_hit_air()
 {
 	var p1,p2,p3,bbox_side,hcheck;
+	sprite_index = spr_gario_hit_air;
 	// Calculate Movement
 	hcheck = (hsp == 0);
 	if (hcheck)
@@ -111,6 +112,7 @@ function sta_player_hit()
 	}
 	if (grounded)
 	{
+		sprite_index = spr_gario;
 		state = PLAYERSTATE.FREE;
 	}
 }

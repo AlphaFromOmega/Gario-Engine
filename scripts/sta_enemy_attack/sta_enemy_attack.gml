@@ -6,7 +6,7 @@ function sta_enemy_attack()
 	hsp = 0;
 	vsp += SPD_GRAVITY;
 	
-	scr_enemy_attack(spr_enemy_attack, spr_enemy_attack_hb);
+	scr_enemy_attack(spr_enemy, spr_enemy_attack, spr_enemy_attack_hb, 1, 10, 5);
 	
 	if (scr_animation_end())
 	{

@@ -14,34 +14,23 @@ with (other)
 		{
 			if (bottomright)
 			{
-				vsp = -10;
+				scr_hit_player(other.damage, 0, -10);
 			}
 			if (topleft)
 			{
-				hsp = 5;
-				vsp = -5;
+				scr_hit_player(other.damage, 5, -10);
 			}
 		}
 		if (topright)
 		{
 			if (bottomright)
 			{
-				hsp = -5;
-				vsp = -5;
+				scr_hit_player(other.damage, -5, -5);
 			}
 			if (topleft)
 			{
-				vsp = 10;
+				scr_hit_player(other.damage, 0, 10);
 			}
 		}
-		state = PLAYERSTATE.HIT;
 	}
-	if (other.damage > 0)
-	{
-		hp -= other.damage;
-	}
-}
-if (instance_exists(obj_revolver))
-{
-	instance_destroy(obj_revolver);
 }

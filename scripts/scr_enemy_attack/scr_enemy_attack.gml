@@ -1,8 +1,8 @@
 /// @description Details variables for slider
-/// @function scr_player_attack(attack_sprite, attack_hitbox);
+/// @function scr_player_attack(idle_sprite, attack_sprite, attack_hitbox, damage, horizontal_knocback, vertical_knockback);
 /// @param attack_sprite
 /// @param attack_hitbox
-function scr_enemy_attack(_attack_sprite, _attack_hitbox)
+function scr_enemy_attack(_idle_sprite, _attack_sprite, _attack_hitbox, _damage, _hkb, _vkb)
 {
 	if (sprite_index != _attack_sprite)
 	{
@@ -17,10 +17,7 @@ function scr_enemy_attack(_attack_sprite, _attack_hitbox)
 	var _hitID = instance_place(x, y, obj_player);
 	with (_hitID)
 	{
-		hp--;
-		hsp = other.image_xscale * 8;
-		vsp = -5;
-		state = PLAYERSTATE.HIT;
+		scr_hit_player(_damage, _hkb * other.image_xscale, _vkb);
 	}
-	mask_index = spr_enemy;
+	mask_index = _idle_sprite;
 }

@@ -8,13 +8,17 @@ enum PLAYERSTATE
 	ATTACK,
 	ATTACK_COMBO,
 	AIM,
-	HIT,
+	HITGROUND,
+	HITAIR,
+	DIEGROUND,
+	DIEAIR,
 	CUTSCENE
 }
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 
+death = 0;
 hsp = 0;
 vsp = 0;
 hsp_fraction = 0;

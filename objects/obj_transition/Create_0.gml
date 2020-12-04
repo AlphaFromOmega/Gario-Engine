@@ -25,3 +25,5 @@ percent = 1;
 target = room;
 trans_out = TRANS_TRANSISTION.VERTICAL;
 trans_in = TRANS_TRANSISTION.VERTICAL;
+a = 0;
+a1 = 0;

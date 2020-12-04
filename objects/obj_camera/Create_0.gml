@@ -6,3 +6,6 @@ view_h_half = camera_get_view_height(cam)/2;
 xTo = x;
 yTo = y;
 scroll = 0;
+a = 0;
+a1 = 0;
+room_start = room;

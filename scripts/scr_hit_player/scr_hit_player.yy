@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Gario",
-    "path": "folders/Scripts/States/Gario.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sta_player_hit",
+  "name": "scr_hit_player",
   "tags": [],
   "resourceType": "GMScript",
 }

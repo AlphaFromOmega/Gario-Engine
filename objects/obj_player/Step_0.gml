@@ -33,9 +33,24 @@ switch (state)
 		sta_player_aiming();
 		break;
 	}
-	case PLAYERSTATE.HIT:
+	case PLAYERSTATE.HITGROUND:
 	{
-		sta_player_hit();
+		sta_player_hit_ground();
+		break;
+	}
+	case PLAYERSTATE.HITAIR:
+	{
+		sta_player_hit_air();
+		break;
+	}
+	case PLAYERSTATE.DIEGROUND:
+	{
+		sta_player_die_ground();
+		break;
+	}
+	case PLAYERSTATE.DIEAIR:
+	{
+		sta_player_die_air();
 		break;
 	}
 	case PLAYERSTATE.CUTSCENE:

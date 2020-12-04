@@ -118,7 +118,7 @@ function sta_enemy_move()
 	}
 	else
 	{
-		if (instance_exists(obj_player) && abs(obj_player.y - y) < 64)
+		if (instance_exists(obj_player) && abs(obj_player.y - y) < 64 && obj_player.hp > 0)
 		{
 			if (abs(obj_player.x - x) < 256 && abs(obj_player.x - x) > 32)
 			{

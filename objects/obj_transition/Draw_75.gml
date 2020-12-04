@@ -1,4 +1,21 @@
 /// @description Draw black bars
+if (instance_exists(obj_player) && obj_player.death > 60)
+{
+	a = min(a + 0.01, 1);
+	draw_sprite_ext(spr_pixel, 0, 0, 0, 1024, 576, 0, c_black, a);
+	if (obj_player.death > 120)
+	{
+		global.music = mus_notanepicgamermoment;
+		a1 = min(a1 + 0.01, 1);
+		draw_set_alpha(a1);
+		draw_set_color(c_white);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_top);
+		draw_set_font(fn_menu);
+		draw_text(512, 288, "Press Space to restart");
+	}
+}
+draw_set_alpha(1);
 if (mode != TRANS_MODE.OFF)
 {
 	draw_set_color(c_black)
