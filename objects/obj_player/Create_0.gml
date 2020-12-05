@@ -26,8 +26,6 @@ vsp_fraction = 0;
 iframes = 0;
 platform = false;
 
-max_hp = 20;
-hp = max_hp;
 
 gun = 0;
 reload = 0;
@@ -43,5 +41,17 @@ tml_aim = false;
 // damage variables
 damage_ticker = 0;
 
+// Stats
+luck = global.player_luck;
+strength = global.player_strength;
+vitality = global.player_vitality;
+agility = global.player_agility;
+fortitude = global.player_fortitude;
+
 global.targetX = x;
 global.targetY = y;
+
+max_hp = 20 * (vitality / 5);
+hp = max_hp;
+spd_jump = agility + SPD_JUMP / 5;
+spd_walk = agility + SPD_WALK / 5;

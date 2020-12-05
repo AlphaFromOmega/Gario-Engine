@@ -6,7 +6,7 @@ function sta_player_attack_combo()
 	hsp = 0;
 	vsp += SPD_GRAVITY;
 	
-	scr_player_attack(spr_gario_punch_combo, spr_gario_punch_combo_hb);
+	scr_player_attack(spr_gario_punch_combo, spr_gario_punch_combo_hb, strength, 4, -5);
 	
 	if (key_attack && image_index > 5)
 	{

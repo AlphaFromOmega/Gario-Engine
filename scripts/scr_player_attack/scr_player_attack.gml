@@ -1,8 +1,13 @@
 /// @description Details variables for slider
-/// @function scr_player_attack(attack_sprite, attack_hitbox);
+/// @function scr_player_attack(attack_sprite, attack_hitbox, damage, horizontal_knocback, vertical_knockback);
 /// @param attack_sprite
 /// @param attack_hitbox
-function scr_player_attack(_attack_sprite, _attack_hitbox)
+/// @param damage
+/// @param horizontal_knocback
+/// @param vertical_knockback
+
+
+function scr_player_attack(_attack_sprite, _attack_hitbox, _damage, _hkb, _vkb)
 {
 	if (sprite_index != _attack_sprite)
 	{
@@ -28,11 +33,11 @@ function scr_player_attack(_attack_sprite, _attack_hitbox)
 				ds_list_add(hitByAttack, _hitID)
 				with (_hitID)
 				{
-					hp--;
+					hp -= _damage;
 					flash = 3;
 					dir = sign(other.image_xscale);
-					hsp = dir * 8;
-					vsp = -10;
+					hsp = dir * _hkb;
+					vsp = _vkb;
 					state = ENEMYSTATE.HIT;
 					hitstatecounter = 60;
 				}

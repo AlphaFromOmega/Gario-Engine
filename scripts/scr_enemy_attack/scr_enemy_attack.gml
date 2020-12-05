@@ -1,5 +1,5 @@
 /// @description Details variables for slider
-/// @function scr_player_attack(idle_sprite, attack_sprite, attack_hitbox, damage, horizontal_knocback, vertical_knockback);
+/// @function scr_enemy_attack(idle_sprite, attack_sprite, attack_hitbox, damage, horizontal_knocback, vertical_knockback);
 /// @param attack_sprite
 /// @param attack_hitbox
 function scr_enemy_attack(_idle_sprite, _attack_sprite, _attack_hitbox, _damage, _hkb, _vkb)

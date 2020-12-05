@@ -8,7 +8,7 @@ function sta_player_hit_air()
 	hcheck = (hsp == 0);
 	if (hcheck)
 	{
-		hsp = (key_right - key_left) * SPD_WALK;
+		hsp = (key_right - key_left) * spd_walk;
 	}
 	else
 	{
