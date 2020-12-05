@@ -4,7 +4,7 @@ function sta_player_free()
 {
 	var p1,p2,p3,bbox_side;
 	// Calculate Movement
-	move = (key_right - key_left) * spd_walk;
+	move = (key_right - key_left) * SPD_WALK;
 	hsp += move;
 	vsp += SPD_GRAVITY;
 
@@ -15,7 +15,7 @@ function sta_player_free()
 	{
 		if (key_up)
 		{
-			vsp = -spd_jump;
+			vsp = -SPD_JUMP;
 			grounded = false;
 		}
 	}

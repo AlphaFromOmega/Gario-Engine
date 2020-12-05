@@ -3,3 +3,5 @@
 with (other) {
 	coins_collected_level += 1;	
 }
+
+instance_destroy();
