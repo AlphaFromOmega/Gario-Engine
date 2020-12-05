@@ -162,6 +162,7 @@
     {"roomId":{"name":"rm_level_debug","path":"rooms/rm_level_debug/rm_level_debug.yy",},},
     {"roomId":{"name":"rm_level_debug1","path":"rooms/rm_level_debug1/rm_level_debug1.yy",},},
     {"roomId":{"name":"rm_level_debug2","path":"rooms/rm_level_debug2/rm_level_debug2.yy",},},
+    {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_lemontown","path":"rooms/rm_lemontown/rm_lemontown.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
