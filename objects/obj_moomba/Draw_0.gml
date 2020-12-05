@@ -10,11 +10,10 @@ if (flash > 0)
 }
 if (instance_exists(obj_player)) {
 	dst = point_distance(obj_player.x, obj_player.y, x, y);
-	if (dst < 500) {
+	if (dst < 200) {
 		draw_set_halign(fa_center);
-		draw_set_valign(fa_top);
-		draw_set_font(fn_menu);
-		draw_set_color(c_white);
-		draw_text(x, y - 60, moomba_message);	
+		draw_set_valign(fa_bottom);
+		draw_set_font(fn_general);
+		scr_textborder(x, bbox_top - 10, moomba_message, c_white, c_black);
 	}
 }

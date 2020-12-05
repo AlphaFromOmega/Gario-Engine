@@ -71,6 +71,7 @@ if (path_speed == 0)
 	sprite_index = spr_level_selector;
 	if (keyboard_check_pressed(ord("D")) && location < global.unlocked)
 	{
+		show_debug_message(string(path_position));
 		image_xscale = 1;
 		path_start(pt_map, 4, path_action_stop, true);
 		path_position = targetpos;
@@ -81,6 +82,7 @@ if (path_speed == 0)
 	}
 	if (keyboard_check_pressed(ord("A")) && location > 0)
 	{
+		show_debug_message(string(path_position));
 		image_xscale = -1;
 		path_start(pt_map, -4, path_action_stop, true);
 		path_position = targetpos;

@@ -27,14 +27,7 @@ for (var i = 0; i < menu_items; i++)
 	}
 	var _xx = menu_x;
 	var _yy = menu_y - (menu_itemheight * (i * 2));
-	// Simplify border at somepoint
-	draw_set_color(c_black);
-	draw_text(_xx + _offset, _yy, _txt);
-	draw_text(_xx - _offset, _yy, _txt);
-	draw_text(_xx, _yy + _offset, _txt);
-	draw_text(_xx, _yy - _offset, _txt);
-	draw_set_color(_col);
-	draw_text(_xx, _yy, _txt)
+	scr_textborder(_xx, _yy, _txt, _col, c_black);
 }
 
 scr_nineSlice(spr_9sliceui, options_x, PANEL_MARGIN - options_y, gui_width - PANEL_MARGIN, (gui_height - PANEL_MARGIN) - options_y);
@@ -56,13 +49,7 @@ for (var i = 0; i < 2; i++)
 	_xx = options_x + (gui_width - (PANEL_MARGIN + options_x)) / 2;
 	_yy = PANEL_MARGIN - options_y + 8 + 96 * i;
 	// Simplify border at somepoint
-	draw_set_color(c_black);
-	draw_text(_xx + _offset, _yy, _txt);
-	draw_text(_xx - _offset, _yy, _txt);
-	draw_text(_xx, _yy + _offset, _txt);
-	draw_text(_xx, _yy - _offset, _txt);
-	draw_set_color(_col);
-	draw_text(_xx, _yy, _txt);
+	scr_textborder(_xx, _yy, _txt, _col, c_black);
 
 	_yy += 64;
 
@@ -90,12 +77,6 @@ for (var i = 2; i < 3; i++)
 	}
 	_xx = options_x + (gui_width - (PANEL_MARGIN + options_x)) / 2;
 	_yy = PANEL_MARGIN - options_y + 8 + (96 * 2) + ((i - 2) * menu_itemheight * 2);
-	// Simplify border at somepoint
-	draw_set_color(c_black);
-	draw_text(_xx + _offset, _yy, _txt);
-	draw_text(_xx - _offset, _yy, _txt);
-	draw_text(_xx, _yy + _offset, _txt);
-	draw_text(_xx, _yy - _offset, _txt);
-	draw_set_color(_col);
-	draw_text(_xx, _yy, _txt);
+	
+	scr_textborder(_xx, _yy, _txt, _col, c_black);
 }

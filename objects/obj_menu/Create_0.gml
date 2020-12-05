@@ -1,9 +1,6 @@
 /// @description GUI/Vars/Menu setup
 #macro PANEL_MARGIN 16
 
-gui_width = display_get_gui_width();
-gui_height = display_get_gui_height();
-
 enum TITLE_MODE
 {
 	BASE,

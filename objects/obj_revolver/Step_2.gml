@@ -22,7 +22,7 @@ if (fire)
 	firingdelay = 15;
 	image_index = 1;
 	image_speed = 1;
-	with (instance_create_layer(x + lengthdir_x(sprite_width,image_angle), y + lengthdir_y(sprite_width,image_angle), "Bullets", obj_bullet))
+	with (instance_create_depth(x + lengthdir_x(sprite_width,image_angle), y + lengthdir_y(sprite_width,image_angle), -100, obj_bullet))
 	{
 		speed = 15;
 		direction = other.image_angle;

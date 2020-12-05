@@ -1,4 +1,6 @@
 /// @description Load Game
+var _curpoint
+location = global.current_level;
 if (global.loadgame)
 {
 	if (file_exists("savegame.gario"))
@@ -26,3 +28,14 @@ if (global.loadgame)
 	
 	global.loadgame = false;
 }
+with (obj_level_marker)
+{
+	if (other.location == level_id)
+	{
+		other.x = x;
+		other.y = y;
+		other.targetpos = path_position;
+		other.path_position = path_position;
+	}
+}
+show_debug_message(string(path_position));
