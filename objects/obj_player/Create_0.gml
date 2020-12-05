@@ -53,5 +53,5 @@ global.targetY = y;
 
 max_hp = 20 * (vitality / 5);
 hp = max_hp;
-spd_jump = agility + SPD_JUMP / 5;
-spd_walk = agility + SPD_WALK / 5;
+spd_jump = agility / 5 + SPD_JUMP;
+spd_walk = agility / 5 + SPD_WALK;
