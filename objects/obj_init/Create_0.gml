@@ -22,3 +22,10 @@ for (var i = 0; i <= tiles; i++)
 {
 	tilemap_set(tilemapid,i,i,0);
 }
+
+global.player_luck = 5;
+global.player_vitality = 5;
+global.player_strength = 5;
+global.player_agility = 5;
+global.player_fortitude = 5;
+
