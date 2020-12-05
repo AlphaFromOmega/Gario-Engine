@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ts_bricks",
-    "path": "sprites/spr_ts_bricks/spr_ts_bricks.yy",
+    "name": "spr_ts_machine",
+    "path": "sprites/spr_ts_machine/spr_ts_machine.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
@@ -67,7 +67,7 @@
         36,
         46,
         47,
-      ],"closed_edge":false,"resourceVersion":"1.0","name":"ts_bricks_autotile","tags":[],"resourceType":"GMAutoTileSet",},
+      ],"closed_edge":false,"resourceVersion":"1.0","name":"ts_machine_autotile","tags":[],"resourceType":"GMAutoTileSet",},
   ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
@@ -141,7 +141,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ts_bricks",
+  "name": "ts_machine",
   "tags": [],
   "resourceType": "GMTileSet",
 }
