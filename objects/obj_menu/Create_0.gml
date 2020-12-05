@@ -50,6 +50,8 @@ options_value[0] = 1;
 
 selected_slider = "null";
 
+global.loadgame = false;
+
 /*
 menu[3] = "New Game";
 menu[2] = "Continue";

@@ -164,12 +164,31 @@ if (menu_x > gui_width + 300) && (menu_committed != -1)
 	{
 		case 3: default:
 		{
+			if (file_exists("savegame.gario"))
+			{
+				file_delete("savegame.gario");
+			}
 			scr_slideTransition(TRANS_MODE.NEXT, TRANS_TRANSISTION.UP, TRANS_TRANSISTION.DOWN);
 			break;
 		}
 		case 2: default:
 		{
-			scr_slideTransition(TRANS_MODE.GOTO, TRANS_TRANSISTION.UP, TRANS_TRANSISTION.DOWN, rm_map);
+			if (file_exists("savegame.gario"))
+			{
+				global.loadgame = true;
+				menu_cursor = 0;
+				menu_x_target = gui_width + 400;
+				scr_slideTransition(TRANS_MODE.GOTO, TRANS_TRANSISTION.UP, TRANS_TRANSISTION.DOWN, rm_map);
+			}
+			else
+			{
+				audio_play_sound(sfx_back, 1, false);
+				menu_x_target = gui_width - gui_margin;
+				menu_committed = -1;
+				options_y_target = gui_height;
+				menu_control = true;
+				mode = TITLE_MODE.BASE;
+			}
 			break;
 		}
 		case 1:
