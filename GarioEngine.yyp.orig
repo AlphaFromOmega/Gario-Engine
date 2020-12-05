@@ -26,7 +26,6 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":3,},
     {"id":{"name":"spr_gario_punch_combo_hb","path":"sprites/spr_gario_punch_combo_hb/spr_gario_punch_combo_hb.yy",},"order":7,},
     {"id":{"name":"obj_roombullet","path":"objects/obj_roombullet/obj_roombullet.yy",},"order":7,},
-    {"id":{"name":"spr_moomba_walk","path":"sprites/spr_moomba_walk/spr_moomba_walk.yy",},"order":0,},
     {"id":{"name":"scr_savestringtofile","path":"scripts/scr_savestringtofile/scr_savestringtofile.yy",},"order":10,},
     {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"order":8,},
     {"id":{"name":"obj_revolver","path":"objects/obj_revolver/obj_revolver.yy",},"order":1,},
@@ -79,8 +78,8 @@
     {"id":{"name":"fn_debug","path":"fonts/fn_debug/fn_debug.yy",},"order":0,},
     {"id":{"name":"spr_gario_aiming","path":"sprites/spr_gario_aiming/spr_gario_aiming.yy",},"order":3,},
     {"id":{"name":"sta_roomba_dead","path":"scripts/sta_roomba_dead/sta_roomba_dead.yy",},"order":3,},
-    {"id":{"name":"spr_moomba","path":"sprites/spr_moomba/spr_moomba.yy",},"order":1,},
     {"id":{"name":"spr_level_selector","path":"sprites/spr_level_selector/spr_level_selector.yy",},"order":1,},
+    {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},"order":5,},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},"order":0,},
     {"id":{"name":"mus_lemontown","path":"sounds/mus_lemontown/mus_lemontown.yy",},"order":3,},
     {"id":{"name":"rm_cutscene_intro","path":"rooms/rm_cutscene_intro/rm_cutscene_intro.yy",},"order":3,},
@@ -157,6 +156,7 @@
     {"roomId":{"name":"rm_level_debug2","path":"rooms/rm_level_debug2/rm_level_debug2.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_lemontown","path":"rooms/rm_lemontown/rm_lemontown.yy",},},
+    {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -194,12 +194,9 @@
     {"folderPath":"folders/Sprites/Roomba.yy","order":16,"resourceVersion":"1.0","name":"Roomba","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Red Roomba.yy","order":17,"resourceVersion":"1.0","name":"Red Roomba","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/States/Roomba.yy","order":10,"resourceVersion":"1.0","name":"Roomba","tags":[],"resourceType":"GMFolder",},
-<<<<<<< HEAD
     {"folderPath":"folders/Rooms/In-Game Dealings.yy","order":7,"resourceVersion":"1.0","name":"In-Game Dealings","tags":[],"resourceType":"GMFolder",},
-=======
     {"folderPath":"folders/Objects/Level/Collectables.yy","order":8,"resourceVersion":"1.0","name":"Collectables","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Moomba.yy","order":19,"resourceVersion":"1.0","name":"Moomba","tags":[],"resourceType":"GMFolder",},
->>>>>>> master
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

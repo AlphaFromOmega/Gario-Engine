@@ -47,3 +47,13 @@ damage_ticker = 0;
 
 global.targetX = x;
 global.targetY = y;
+
+strength = global.player_strength;
+agility = global.player_agility;
+fortitude = global.player_fortitude;
+luck = global.player_luck;
+vitality = global.player_vitality;
+
+max_hp = vitality * 4;
+spd_walk = (agility / 5) * SPD_WALK;
+spd_jump = (agility / 5) * SPD_JUMP;
