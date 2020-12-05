@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5bddf3c6-e467-47a0-81fe-f63040c2144e","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5bddf3c6-e467-47a0-81fe-f63040c2144e","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"LayerId":{"name":"3e269749-9b24-439a-a3f0-115a328b52b1","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_ts_bricks","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"resourceVersion":"1.0","name":"5bddf3c6-e467-47a0-81fe-f63040c2144e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d7302a3e-f988-46e1-8011-6a4196410807","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d7302a3e-f988-46e1-8011-6a4196410807","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},"LayerId":{"name":"025ca5e6-84f6-4651-b6e0-ab12656f0cbd","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_ts_machine","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},"resourceVersion":"1.0","name":"d7302a3e-f988-46e1-8011-6a4196410807","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_ts_bricks","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},
+    "spriteId": {"name":"spr_ts_machine","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"020451f6-c6c1-4696-a3c6-a3b56b52b681","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5bddf3c6-e467-47a0-81fe-f63040c2144e","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2e29dba7-86db-4b76-bb91-8df895b03e91","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7302a3e-f988-46e1-8011-6a4196410807","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_ts_bricks","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},
+    "parent": {"name":"spr_ts_machine","path":"sprites/spr_ts_machine/spr_ts_machine.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_ts_bricks",
+    "name": "spr_ts_machine",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3e269749-9b24-439a-a3f0-115a328b52b1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"025ca5e6-84f6-4651-b6e0-ab12656f0cbd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Tile Sets",
     "path": "folders/Sprites/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_ts_bricks",
+  "name": "spr_ts_machine",
   "tags": [],
   "resourceType": "GMSprite",
 }
