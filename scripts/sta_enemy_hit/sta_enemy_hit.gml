@@ -102,7 +102,7 @@ function sta_enemy_hit()
 			state = ENEMYSTATE.FREE;
 		}
 	}
-	if (hp == 0)
+	if (hp <= 0)
 	{
 		instance_destroy();
 	}
