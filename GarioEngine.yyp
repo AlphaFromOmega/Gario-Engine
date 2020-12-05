@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"ts_stone","path":"tilesets/ts_stone/ts_stone.yy",},"order":4,},
     {"id":{"name":"scr_hit_player","path":"scripts/scr_hit_player/scr_hit_player.yy",},"order":9,},
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},"order":5,},
     {"id":{"name":"spr_gario_punch_combo","path":"sprites/spr_gario_punch_combo/spr_gario_punch_combo.yy",},"order":6,},
@@ -50,6 +51,7 @@
     {"id":{"name":"spr_selector","path":"sprites/spr_selector/spr_selector.yy",},"order":0,},
     {"id":{"name":"spr_9sliceui","path":"sprites/spr_9sliceui/spr_9sliceui.yy",},"order":3,},
     {"id":{"name":"sta_player_die_air","path":"scripts/sta_player_die_air/sta_player_die_air.yy",},"order":7,},
+    {"id":{"name":"spr_ts_stone","path":"sprites/spr_ts_stone/spr_ts_stone.yy",},"order":4,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":2,},
     {"id":{"name":"spr_gario_hit_ground","path":"sprites/spr_gario_hit_ground/spr_gario_hit_ground.yy",},"order":12,},
     {"id":{"name":"spr_brush_levelfinish","path":"sprites/spr_brush_levelfinish/spr_brush_levelfinish.yy",},"order":3,},
