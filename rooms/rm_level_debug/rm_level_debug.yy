@@ -45,6 +45,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_brush_platform","path":"objects/obj_brush_platform/obj_brush_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":512.0,"resourceVersion":"1.0","name":"inst_A629467","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_brush_platform","path":"objects/obj_brush_platform/obj_brush_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2784.0,"y":448.0,"resourceVersion":"1.0","name":"inst_57738645","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_brush_platform","path":"objects/obj_brush_platform/obj_brush_platform.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2784.0,"y":544.0,"resourceVersion":"1.0","name":"inst_1789A42E","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_moomba","path":"objects/obj_moomba/obj_moomba.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-0.165511,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":961.0,"y":464.0,"resourceVersion":"1.0","name":"inst_39E2E323","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Brushes","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Bullets","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -166,6 +167,7 @@
     {"name":"inst_A629467","path":"rooms/rm_level_debug/rm_level_debug.yy",},
     {"name":"inst_57738645","path":"rooms/rm_level_debug/rm_level_debug.yy",},
     {"name":"inst_1789A42E","path":"rooms/rm_level_debug/rm_level_debug.yy",},
+    {"name":"inst_39E2E323","path":"rooms/rm_level_debug/rm_level_debug.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

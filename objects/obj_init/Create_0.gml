@@ -8,6 +8,7 @@ global.targetRoom = -1;
 global.targetX = -1;
 global.targetY = -1;
 global.targetDir = -1;
+global.coins = 0;
 
 audio_group_load(ag_mus);
 audio_group_load(ag_sfx);
