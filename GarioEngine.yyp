@@ -82,7 +82,6 @@
     {"id":{"name":"spr_moomba","path":"sprites/spr_moomba/spr_moomba.yy",},"order":1,},
     {"id":{"name":"spr_level_selector","path":"sprites/spr_level_selector/spr_level_selector.yy",},"order":1,},
     {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},"order":5,},
-    {"id":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},"order":0,},
     {"id":{"name":"mus_lemontown","path":"sounds/mus_lemontown/mus_lemontown.yy",},"order":3,},
     {"id":{"name":"rm_cutscene_intro","path":"rooms/rm_cutscene_intro/rm_cutscene_intro.yy",},"order":3,},
     {"id":{"name":"sta_enemy_attack","path":"scripts/sta_enemy_attack/sta_enemy_attack.yy",},"order":2,},
