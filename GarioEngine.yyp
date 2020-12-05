@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"ts_stone","path":"tilesets/ts_stone/ts_stone.yy",},"order":4,},
     {"id":{"name":"scr_hit_player","path":"scripts/scr_hit_player/scr_hit_player.yy",},"order":9,},
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},"order":5,},
     {"id":{"name":"spr_gario_punch_combo","path":"sprites/spr_gario_punch_combo/spr_gario_punch_combo.yy",},"order":6,},
@@ -18,6 +19,7 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":3,},
     {"id":{"name":"spr_gario_punch_combo_hb","path":"sprites/spr_gario_punch_combo_hb/spr_gario_punch_combo_hb.yy",},"order":7,},
     {"id":{"name":"scr_savestringtofile","path":"scripts/scr_savestringtofile/scr_savestringtofile.yy",},"order":10,},
+    {"id":{"name":"spr_ts_bricks","path":"sprites/spr_ts_bricks/spr_ts_bricks.yy",},"order":3,},
     {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},"order":8,},
     {"id":{"name":"obj_revolver","path":"objects/obj_revolver/obj_revolver.yy",},"order":1,},
     {"id":{"name":"spr_gario_die_ground","path":"sprites/spr_gario_die_ground/spr_gario_die_ground.yy",},"order":13,},
@@ -50,6 +52,7 @@
     {"id":{"name":"spr_selector","path":"sprites/spr_selector/spr_selector.yy",},"order":0,},
     {"id":{"name":"spr_9sliceui","path":"sprites/spr_9sliceui/spr_9sliceui.yy",},"order":3,},
     {"id":{"name":"sta_player_die_air","path":"scripts/sta_player_die_air/sta_player_die_air.yy",},"order":7,},
+    {"id":{"name":"spr_ts_stone","path":"sprites/spr_ts_stone/spr_ts_stone.yy",},"order":4,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":2,},
     {"id":{"name":"spr_gario_hit_ground","path":"sprites/spr_gario_hit_ground/spr_gario_hit_ground.yy",},"order":12,},
     {"id":{"name":"spr_brush_levelfinish","path":"sprites/spr_brush_levelfinish/spr_brush_levelfinish.yy",},"order":3,},
@@ -68,6 +71,7 @@
     {"id":{"name":"spr_enemy_attack_hb","path":"sprites/spr_enemy_attack_hb/spr_enemy_attack_hb.yy",},"order":2,},
     {"id":{"name":"obj_brush_levelfinish","path":"objects/obj_brush_levelfinish/obj_brush_levelfinish.yy",},"order":3,},
     {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},"order":4,},
+    {"id":{"name":"ts_bricks","path":"tilesets/ts_bricks/ts_bricks.yy",},"order":3,},
     {"id":{"name":"sta_player_aiming","path":"scripts/sta_player_aiming/sta_player_aiming.yy",},"order":0,},
     {"id":{"name":"spr_cylinder","path":"sprites/spr_cylinder/spr_cylinder.yy",},"order":4,},
     {"id":{"name":"spr_enemy_attack","path":"sprites/spr_enemy_attack/spr_enemy_attack.yy",},"order":0,},
