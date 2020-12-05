@@ -9,39 +9,43 @@ function scr_hit_player(_damage, _hkb, _vkb)
 	{
 		if (hp > 0)
 		{
-			var _grounded = (scr_inFloor(tilemap,x,bbox_bottom+1, true) >= 0);
-			if (_damage >= hp)
-			{
-				global.music = NOMUSIC;
-				hp = 0;
-				if (_grounded)
+			if (damage_ticker == 0) {
+				var _grounded = (scr_inFloor(tilemap,x,bbox_bottom+1, true) >= 0);
+				if (_damage >= hp)
 				{
-					// Don't apply knockback, Switch to the ground death state
-					state = PLAYERSTATE.DIEGROUND;
+					global.music = NOMUSIC;
+					hp = 0;
+					if (_grounded)
+					{
+						// Don't apply knockback, Switch to the ground death state
+						state = PLAYERSTATE.DIEGROUND;
+					}
+					else
+					{
+						// Apply Knockback, Switch to state death in air
+						state = PLAYERSTATE.DIEAIR;
+						hsp = _hkb;
+						vsp = _vkb;
+					}
+					audio_play_sound(sfx_death,1,false);
 				}
 				else
 				{
-					// Apply Knockback, Switch to state death in air
-					state = PLAYERSTATE.DIEAIR;
+					// BEGIN DAMAGE CODE.
+					damage_ticker = 39;
+					hp -= _damage;
+					if (_grounded)
+					{
+						iframes = 10;
+						state = PLAYERSTATE.HITGROUND;
+					}
+					else
+					{
+						state = PLAYERSTATE.HITAIR;
+					}
 					hsp = _hkb;
 					vsp = _vkb;
 				}
-				audio_play_sound(sfx_death,1,false);
-			}
-			else
-			{
-				hp -= _damage;
-				if (_grounded)
-				{
-					iframes = 10;
-					state = PLAYERSTATE.HITGROUND;
-				}
-				else
-				{
-					state = PLAYERSTATE.HITAIR;
-				}
-				hsp = _hkb;
-				vsp = _vkb;
 			}
 		}
 	}

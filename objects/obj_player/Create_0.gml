@@ -39,5 +39,9 @@ tml_jump = false;
 tml_attack = false;
 tml_aim = false;
 
+
+// damage variables
+damage_ticker = 0;
+
 global.targetX = x;
 global.targetY = y;

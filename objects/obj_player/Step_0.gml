@@ -73,3 +73,8 @@ if (key_reload && bullets < 6 && reload == 0)
 {
 	reload = 60;
 }
+
+if (damage_ticker > 0)
+{
+	damage_ticker--;
+}
