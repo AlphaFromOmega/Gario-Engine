@@ -106,7 +106,7 @@ function sta_roombox_move()
 	}
 	if (attack_cooldown > 0)
 	{
-		if (abs(obj_player.x - x) < 256)
+		if (instance_exists(obj_player) && abs(obj_player.x - x) < 256)
 		{
 			dir = -sign(obj_player.x - x);
 			if (obj_player.x - x == 0)
