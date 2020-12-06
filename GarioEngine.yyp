@@ -149,7 +149,6 @@
     {"id":{"name":"scr_loadjsonfromfile","path":"scripts/scr_loadjsonfromfile/scr_loadjsonfromfile.yy",},"order":11,},
     {"id":{"name":"spr_ts_grassback","path":"sprites/spr_ts_grassback/spr_ts_grassback.yy",},"order":2,},
     {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},"order":3,},
-    {"id":{"name":"rm_level_debug","path":"rooms/rm_level_debug/rm_level_debug.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Windows","path":"options/windows/options_windows.yy",},
@@ -169,7 +168,6 @@
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_cutscene_intro","path":"rooms/rm_cutscene_intro/rm_cutscene_intro.yy",},},
-    {"roomId":{"name":"rm_level_debug","path":"rooms/rm_level_debug/rm_level_debug.yy",},},
     {"roomId":{"name":"rm_level_debug1","path":"rooms/rm_level_debug1/rm_level_debug1.yy",},},
     {"roomId":{"name":"rm_level_debug2","path":"rooms/rm_level_debug2/rm_level_debug2.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
