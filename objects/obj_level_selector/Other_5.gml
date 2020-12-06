@@ -18,14 +18,7 @@ ds_map_add(_map, "agility", global.player_agility);
 ds_map_add(_map, "fortitude", global.player_fortitude);
 ds_map_add(_map, "coins", global.coins);
 ds_map_add(_map, "diamonds", global.diamonds);
-var _dc = ds_list_create();
-for (var t = 0; t < global.max_levels; t++) {
-	var _dct = ds_list_create();
-	for (var i = 0; i < 5; i++) {
-		ds_list_add(_dct, global.diamonds_collected[t,i]);
-	}
-	ds_list_add(_dc, _dct);
-}
+
 ds_map_add(_map, "diamonds_collected", global.diamonds_collected);
 ds_map_add(_map, "spread", global.spread);
 ds_map_add(_map, "reload_rate", global.reload_rate);

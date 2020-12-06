@@ -23,12 +23,7 @@ if (global.loadgame)
 			global.player_fortitude = _map[? "fortitude"];
 			global.coins = _map[? "coins"];
 			global.diamonds = _map[? "diamonds"];
-			var _dc = ds_map_find_value(_map, "diamonds_collected");
-			for (var t = 0; t < ds_list_size(_dc); t++) {
-				for (var i = 0; i < 5; i++) {
-					global.diamonds_collected[t,i] = ds_list_find_index(ds_list_find_index(_dc, t), i);
-				}
-			}
+			
 			global.cuckthisjazz = ds_map_find_value(_map, "oopsies");
 			global.spread = _map[? "spread"];
 			global.reload_rate = _map[? "reload_rate"];
