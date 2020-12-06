@@ -107,7 +107,7 @@ function sta_redroomba_move()
 	
 	if (instance_exists(obj_player) and obj_player.hp > 0)
 	{
-		if (abs(obj_player.x - x) < 700 && abs(obj_player.x - x) > 32)
+		if (abs(obj_player.x - x) < 700 && abs(obj_player.x - x) > 120)
 		{
 			dir = sign(obj_player.x - x);
 			if (obj_player.x - x == 0)
