@@ -21,8 +21,8 @@ if (global.loadgame)
 			global.player_strength = _map[? "strength"];
 			global.player_agility = _map[? "agility"];
 			global.player_fortitude = _map[? "fortitude"];
-			global.coins = _map[? "coins"] + 40000;
-			global.diamonds = _map[? "diamonds"] + 200;
+			global.coins = _map[? "coins"];
+			global.diamonds = _map[? "diamonds"];
 			var _diamonds_collected = _map[? "diamonds_collected"];
 			for (var j = 0; j < ds_list_size(_diamonds_collected); j++)
 			{

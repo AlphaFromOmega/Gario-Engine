@@ -184,6 +184,7 @@
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_cutscene_intro","path":"rooms/rm_cutscene_intro/rm_cutscene_intro.yy",},},
+    {"roomId":{"name":"rm_level_one","path":"rooms/rm_level_one/rm_level_one.yy",},},
     {"roomId":{"name":"rm_level_debug","path":"rooms/rm_level_debug/rm_level_debug.yy",},},
     {"roomId":{"name":"rm_level_debug1","path":"rooms/rm_level_debug1/rm_level_debug1.yy",},},
     {"roomId":{"name":"rm_level_debug2","path":"rooms/rm_level_debug2/rm_level_debug2.yy",},},
@@ -192,7 +193,6 @@
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
-    {"roomId":{"name":"rm_level_one","path":"rooms/rm_level_one/rm_level_one.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
