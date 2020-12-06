@@ -9,7 +9,7 @@ function sta_roomba_attack()
 	if (!shot and image_index >= 14 and image_index <= 18) {
 		shot = true;
 		audio_play_sound(sfx_roomba_shoot, 1, false);
-		with (instance_create_layer(x, y - sprite_height/4, "Bullets", obj_roombullet))
+		with (instance_create_depth(x, y - sprite_height/4, -100, obj_roombullet))
 		{
 			speed = 15;
 			if (other.image_xscale == -1) {
