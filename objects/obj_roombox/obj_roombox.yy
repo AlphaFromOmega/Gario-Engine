@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_roombox",
+    "path": "sprites/spr_roombox/spr_roombox.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_enemy",
