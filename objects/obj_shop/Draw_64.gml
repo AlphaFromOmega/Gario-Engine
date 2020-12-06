@@ -7,7 +7,7 @@ draw_set_halign(fa_left);
 draw_set_font(fn_menu);
 scr_textborder(PANEL_MARGIN + sprite_get_width(spr_coin), gui_height - 48, string(global.coins), c_white, c_black);
 
-scr_nineSlice(spr_9sliceui, gui_width * 2 / 3, -16, gui_width + 16, gui_height + 16);
+scr_nineSlice(spr_9sliceui, menu_x, -16, gui_width + 16, gui_height + 16);
 
 for (var i = 0; i < menu_items; i++)
 {

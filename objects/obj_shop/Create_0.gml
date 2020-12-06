@@ -39,7 +39,7 @@ menu_cursor = 0;
 menu_committed = -1;
 menu_itemheight = font_get_size(fn_menu);
 
-menu_x = gui_width * 2 / 3;
+menu_x = gui_width * 4 / 7;
 menu_y = 64;
 
 shop_stat_cost[0] = 3;
@@ -77,5 +77,7 @@ shop_extr_cuck = 0;
 success = false;
 
 menu_cost_is_diamonds = false;
+
+wipein = 
 
 scr_load_shop();

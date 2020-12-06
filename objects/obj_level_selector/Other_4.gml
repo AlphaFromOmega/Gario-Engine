@@ -21,6 +21,8 @@ if (global.loadgame)
 			global.player_strength = _map[? "strength"];
 			global.player_agility = _map[? "agility"];
 			global.player_fortitude = _map[? "fortitude"];
+			global.coins = _map[? "coins"] + 4000;
+			global.diamonds = _map[? "diamonds"] + 100;
 		}
 		ds_map_destroy(_wrapper);
 		show_debug_message("Game Loaded");

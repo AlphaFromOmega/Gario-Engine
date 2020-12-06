@@ -17,6 +17,8 @@ ds_map_add(_map, "vitality", global.player_vitality);
 ds_map_add(_map, "strength", global.player_strength);
 ds_map_add(_map, "agility", global.player_agility);
 ds_map_add(_map, "fortitude", global.player_fortitude);
+ds_map_add(_map, "coins", global.coins);
+ds_map_add(_map, "diamonds", global.diamonds);
 
 // Wrap the list in a map
 var _wrapper = ds_map_create();

@@ -71,7 +71,7 @@ if (newmode != -1)
 				menu_cost[menu_items] = shop_shot_incr[shop_upgr_shot_increase];
 				menu_items += 1;
 			}
-			if (shop_upgr_damage < shop_damage_incr) {
+			if (shop_upgr_damage < shop_damage_limit) {
 				menu[menu_items] = "Damage++";
 				menu_cost[menu_items] = shop_damage_incr[shop_upgr_damage];
 				menu_items += 1;
@@ -119,11 +119,13 @@ switch (mode)
 				case 2: //EXTRAS
 				{
 					newmode = SHOPMENU.EXTRAS;
+					break;
 				}
 				case 3: //EXIT
 				{
 					scr_save_shop();
-					scr_slideTransition(TRANS_MODE.GOTO, wipeout, wipein, rm_map);
+					scr_slideTransition(TRANS_MODE.GOTO, TRANS_TRANSISTION.UP, TRANS_TRANSISTION.DOWN, rm_map);
+					break;
 				}
 			}
 		}
