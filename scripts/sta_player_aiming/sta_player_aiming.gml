@@ -110,7 +110,7 @@ function sta_player_aiming()
 		}
 	}
 
-	if (key_fire && reload == 0)
+	if (total_ammo > 0 && key_fire && reload == 0)
 	{
 		if (bullets > 0)
 		{
@@ -123,6 +123,7 @@ function sta_player_aiming()
 		else
 		{
 			reload = global.reload_rate;
+			total_ammo -= (min(total_ammo, 6) - bullets);
 		}
 	}
 

@@ -65,13 +65,14 @@ if (reload > 0)
 	reload--;
 	if (reload == 0)
 	{
-		bullets = 6;
+		bullets = max(0, min(total_ammo, 6));
 	}
 }
 
-if (key_reload && bullets < 6 && reload == 0)
+if (key_reload && bullets < min(total_ammo, 6) && reload == 0)
 {
-	reload = 60;
+	total_ammo -= (min(total_ammo, 6) - bullets);
+	reload = global.reload_rate;
 }
 
 if (damage_ticker > 0)
