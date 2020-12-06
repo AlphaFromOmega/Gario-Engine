@@ -33,13 +33,15 @@ function scr_player_attack(_attack_sprite, _attack_hitbox, _damage, _hkb, _vkb)
 				ds_list_add(hitByAttack, _hitID)
 				with (_hitID)
 				{
-					hp -= _damage;
-					flash = 3;
-					dir = sign(other.image_xscale);
-					hsp = dir * _hkb;
-					vsp = _vkb;
-					state = ENEMYSTATE.HIT;
-					hitstatecounter = 60;
+					if (state != ENEMYSTATE.DEAD) {
+						hp -= _damage;
+						flash = 3;
+						dir = sign(other.image_xscale);
+						hsp = dir * _hkb;
+						vsp = _vkb;
+						state = ENEMYSTATE.HIT;
+						hitstatecounter = 60;
+					}
 				}
 			}
 		}
