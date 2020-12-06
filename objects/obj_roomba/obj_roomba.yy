@@ -10,7 +10,10 @@
     "path": "sprites/spr_roomba_idle/spr_roomba_idle.yy",
   },
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy",
+    "path": "objects/obj_enemy/obj_enemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
