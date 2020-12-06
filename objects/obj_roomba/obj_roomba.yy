@@ -5,15 +5,9 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_roomba_idle",
-    "path": "sprites/spr_roomba_idle/spr_roomba_idle.yy",
-  },
+  "spriteMaskId": null,
   "persistent": true,
-  "parentObjectId": {
-    "name": "obj_enemy",
-    "path": "objects/obj_enemy/obj_enemy.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
