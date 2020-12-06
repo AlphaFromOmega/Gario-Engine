@@ -113,6 +113,7 @@
     {"id":{"name":"sfx_roomba_shoot","path":"sounds/sfx_roomba_shoot/sfx_roomba_shoot.yy",},"order":6,},
     {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},"order":4,},
     {"id":{"name":"obj_ammo","path":"objects/obj_ammo/obj_ammo.yy",},"order":2,},
+    {"id":{"name":"Room10","path":"rooms/Room10/Room10.yy",},"order":0,},
     {"id":{"name":"scr_load_shop","path":"scripts/scr_load_shop/scr_load_shop.yy",},"order":0,},
     {"id":{"name":"sta_player_aiming","path":"scripts/sta_player_aiming/sta_player_aiming.yy",},"order":0,},
     {"id":{"name":"mus_gariowave","path":"sounds/mus_gariowave/mus_gariowave.yy",},"order":3,},
@@ -191,6 +192,7 @@
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_map","path":"rooms/rm_map/rm_map.yy",},},
     {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
+    {"roomId":{"name":"Room10","path":"rooms/Room10/Room10.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -235,6 +237,7 @@
     {"folderPath":"folders/Scripts/Shop.yy","order":14,"resourceVersion":"1.0","name":"Shop","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Roombox.yy","order":20,"resourceVersion":"1.0","name":"Roombox","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/States/Roombox.yy","order":12,"resourceVersion":"1.0","name":"Roombox","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/Level/Level 1.yy","order":4,"resourceVersion":"1.0","name":"Level 1","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
