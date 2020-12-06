@@ -11,8 +11,14 @@ function sta_player_die_air()
 	y += vsp;
 	if (keyboard_check_pressed(vk_space))
 	{
-		instance_destroy(obj_player);
 		scr_slideTransition(TRANS_MODE.GOTO, TRANS_TRANSISTION.VERTICAL, TRANS_TRANSISTION.VERTICAL, obj_camera.room_start);
+		with (all)
+		{
+			if !(object_index == obj_music || object_index == obj_transition)
+			{
+				instance_destroy();
+			}
+		}
 	}
 	death++;
 }
