@@ -168,6 +168,9 @@ if (menu_x > gui_width + 300) && (menu_committed != -1)
 			{
 				file_delete("savegame.gario");
 			}
+			if (file_exists("shop.gario")) {
+				file_delete("shop.gario");	
+			}
 			scr_slideTransition(TRANS_MODE.NEXT, TRANS_TRANSISTION.UP, TRANS_TRANSISTION.DOWN);
 			break;
 		}

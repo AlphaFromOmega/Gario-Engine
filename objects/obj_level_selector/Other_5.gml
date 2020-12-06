@@ -19,6 +19,11 @@ ds_map_add(_map, "agility", global.player_agility);
 ds_map_add(_map, "fortitude", global.player_fortitude);
 ds_map_add(_map, "coins", global.coins);
 ds_map_add(_map, "diamonds", global.diamonds);
+ds_map_add(_map, "spread", global.spread);
+ds_map_add(_map, "reload_rate", global.reload_rate);
+ds_map_add(_map, "gun_damage", global.gun_damage);
+ds_map_add(_map, "cuckmonster", global.cuckmonster);
+ds_map_add(_map, "bullet_count", global.bullet_count);
 
 // Wrap the list in a map
 var _wrapper = ds_map_create();

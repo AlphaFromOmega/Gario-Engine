@@ -21,8 +21,13 @@ if (global.loadgame)
 			global.player_strength = _map[? "strength"];
 			global.player_agility = _map[? "agility"];
 			global.player_fortitude = _map[? "fortitude"];
-			global.coins = _map[? "coins"] + 4000;
-			global.diamonds = _map[? "diamonds"] + 100;
+			global.coins = _map[? "coins"] + 40000;
+			global.diamonds = _map[? "diamonds"] + 200;
+			global.spread = _map[? "spread"];
+			global.reload_rate = _map[? "reload_rate"];
+			global.gun_damage = _map[? "gun_damage"];
+			global.cuckmonster = _map[? "cuckmonster"];
+			global.bullet_count = _map[? "bullet_count"];
 		}
 		ds_map_destroy(_wrapper);
 		show_debug_message("Game Loaded");

@@ -22,11 +22,23 @@ if (fire)
 	firingdelay = 15;
 	image_index = 1;
 	image_speed = 1;
-	with (instance_create_depth(x + lengthdir_x(sprite_width,image_angle), y + lengthdir_y(sprite_width,image_angle), -100, obj_bullet))
-	{
-		speed = 15;
-		direction = other.image_angle;
-		image_angle = direction;
+	for (var i = 0; i < global.bullet_count; i++) {
+		with (instance_create_depth(x + lengthdir_x(sprite_width,image_angle), y + lengthdir_y(sprite_width,image_angle), -100, obj_bullet))
+		{
+			speed = 15;
+			if (i > 0 and i mod 2 == 0) {
+				direction = other.image_angle + (global.spread * floor(i / 2));
+				image_angle = direction + (global.spread * floor(i / 2));
+			}
+			else if (i > 0) {
+				direction = other.image_angle - (global.spread * floor(i / 2));
+				image_angle = direction - (global.spread * floor(i / 2));
+			}
+			else {
+				direction = other.image_angle;
+				image_angle = direction;
+			}
+		}
 	}
 	fire = false;
 }
