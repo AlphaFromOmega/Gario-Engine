@@ -21,9 +21,15 @@ if (global.loadgame)
 			global.player_strength = _map[? "strength"];
 			global.player_agility = _map[? "agility"];
 			global.player_fortitude = _map[? "fortitude"];
-			global.coins = _map[? "coins"] + 40000;
-			global.diamonds = _map[? "diamonds"] + 200;
-			global.diamonds_collected = _map[? "diamonds_collected"];
+			global.coins = _map[? "coins"];
+			global.diamonds = _map[? "diamonds"];
+			var _dc = ds_map_find_value(_map, "diamonds_collected");
+			for (var t = 0; t < ds_list_size(_dc); t++) {
+				for (var i = 0; i < 5; i++) {
+					global.diamonds_collected[t,i] = ds_list_find_index(ds_list_find_index(_dc, t), i);
+				}
+			}
+			global.cuckthisjazz = ds_map_find_value(_map, "oopsies");
 			global.spread = _map[? "spread"];
 			global.reload_rate = _map[? "reload_rate"];
 			global.gun_damage = _map[? "gun_damage"];

@@ -17,6 +17,9 @@ global.spread = 15;
 global.gun_damage = 1;
 global.cuckmonster = false;
 global.bullet_count = 1;
+global.max_levels = MAXLEVELS;
+
+global.cuckthisjazz[0] = 0;
 
 for (var i = 0; i <= MAXLEVELS; i++)
 {
