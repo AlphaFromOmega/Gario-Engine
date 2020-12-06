@@ -104,6 +104,12 @@ function sta_enemy_hit()
 	}
 	if (hp <= 0)
 	{
+		var i;
+		for (i = 0; i < 10; i += 1) {
+			coin = instance_create_layer(x, y, "Entities", obj_coin);
+			coin.vsp = random_range(-4, -12);
+			coin.hsp = random_range(-6, 6);
+		}
 		instance_destroy();
 	}
 	hitstatecounter--;
