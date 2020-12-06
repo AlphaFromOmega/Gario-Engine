@@ -103,6 +103,7 @@
     {"id":{"name":"sfx_roomba_shoot","path":"sounds/sfx_roomba_shoot/sfx_roomba_shoot.yy",},"order":6,},
     {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},"order":4,},
     {"id":{"name":"sta_player_aiming","path":"scripts/sta_player_aiming/sta_player_aiming.yy",},"order":0,},
+    {"id":{"name":"spr_gui_diamond","path":"sprites/spr_gui_diamond/spr_gui_diamond.yy",},"order":8,},
     {"id":{"name":"mus_gariowave","path":"sounds/mus_gariowave/mus_gariowave.yy",},"order":3,},
     {"id":{"name":"spr_cylinder","path":"sprites/spr_cylinder/spr_cylinder.yy",},"order":4,},
     {"id":{"name":"spr_enemy_attack","path":"sprites/spr_enemy_attack/spr_enemy_attack.yy",},"order":0,},
