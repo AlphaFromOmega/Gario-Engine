@@ -99,12 +99,11 @@ function sta_roombox_hit()
 		}
 		if (hitstatecounter == 0 || (hsp == 0 && vsp == 0))
 		{
-			state = ENEMYSTATE.FREE;
+			state = ROOMBOXSTATE.FREE;
 		}
 	}
 	if (hp <= 0)
 	{
-		audio_play_sound(sfx_kill, 1, false);
 		var i;
 		for (i = 0; i < 10; i += 1) {
 			coin = instance_create_layer(x, y, "Entities", obj_coin);
