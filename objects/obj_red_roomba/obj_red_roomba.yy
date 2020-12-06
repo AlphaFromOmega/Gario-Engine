@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_red_roomba_idle",
+    "path": "sprites/spr_red_roomba_idle/spr_red_roomba_idle.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_roomba",
