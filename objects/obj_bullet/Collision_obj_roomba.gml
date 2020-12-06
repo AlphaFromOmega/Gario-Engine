@@ -3,11 +3,13 @@
 /// @description Insert description here
 with (other)
 {
-	hp -= global.gun_damage;
-	flash = 3;
-	hsp = 0;
-	vsp = 0;
-	state = ROOMBASTATE.HIT;
-	hitstatecounter = 40;
+	if (state != ROOMBASTATE.DEAD) {
+		hp -= global.gun_damage;
+		flash = 3;
+		hsp = 0;
+		vsp = 0;
+		state = ROOMBASTATE.HIT;
+		hitstatecounter = 40;
+	}
 }
 instance_destroy();
