@@ -40,3 +40,4 @@ if (mode != TRANS_MODE.OFF)
 		}
 	}
 }
+show_debug_message(string(global.diamonds_collected));

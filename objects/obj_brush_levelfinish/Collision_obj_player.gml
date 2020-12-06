@@ -13,7 +13,7 @@ if (obj_transition.mode == TRANS_MODE.OFF)
 		if (!(global.diamonds_collected[obj_camera.level_id,i]) && obj_player.diamonds_collected[i])
 		{
 			global.diamonds++;
-			global.diamonds_collected[obj_camera.level_id,i] = obj_player.diamonds_collected[i];
+			global.diamonds_collected[obj_camera.level_id,i] = true;
 		}
 	}
 	scr_slideTransition(TRANS_MODE.GOTO, wipeout, wipein, rm_map);

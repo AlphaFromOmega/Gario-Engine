@@ -59,5 +59,8 @@ vitality = global.player_vitality;
 max_hp = vitality * 4;
 spd_walk = (agility / 5) * SPD_WALK;
 spd_jump = (agility / 5) * SPD_JUMP;
-
+for (var i = 0; i < 5; i++)
+{
+	diamonds_collected[i] = false;
+}
 total_ammo = 60;
