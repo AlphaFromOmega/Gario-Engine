@@ -10,6 +10,7 @@ global.targetX = -1;
 global.targetY = -1;
 global.targetDir = -1;
 global.coins = 0;
+global.diamonds = 0;
 global.current_level = 0;
 for (var i = 0; i <= MAXLEVELS; i++)
 {
