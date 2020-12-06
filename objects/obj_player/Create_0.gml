@@ -42,6 +42,11 @@ tml_aim = false;
 total_coins_collected = global.coins;
 coins_collected_level = 0;
 
+for (var i = 0; i < 5; i++)
+{
+	gem_collected[i] = false;
+}
+
 // damage variables
 damage_ticker = 0;
 

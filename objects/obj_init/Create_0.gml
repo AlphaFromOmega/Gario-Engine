@@ -1,5 +1,6 @@
 /// @description Game Setup
 #macro TILE_SIZE 32
+#macro MAXLEVELS 20
 
 // Global Variables
 global.unlocked = 0;
@@ -10,6 +11,13 @@ global.targetY = -1;
 global.targetDir = -1;
 global.coins = 0;
 global.current_level = 0;
+for (var i = 0; i <= MAXLEVELS; i++)
+{
+	for (var j = 0; j < 5; j++)
+	{
+		global.gem_collected[i, j] = false;
+	}
+}
 
 audio_group_load(ag_mus);
 audio_group_load(ag_sfx);
