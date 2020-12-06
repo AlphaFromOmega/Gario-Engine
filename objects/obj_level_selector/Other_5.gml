@@ -6,7 +6,6 @@ var _map = ds_map_create();
 ds_list_add(_root_list, _map);
 ds_list_mark_as_map(_root_list, ds_list_size(_root_list) - 1);
 
-var _obj = object_get_name(object_index);
 ds_map_add(_map, "location", location);
 ds_map_add(_map, "unlocked", global.unlocked);
 ds_map_add(_map, "x", x);
@@ -19,6 +18,7 @@ ds_map_add(_map, "agility", global.player_agility);
 ds_map_add(_map, "fortitude", global.player_fortitude);
 ds_map_add(_map, "coins", global.coins);
 ds_map_add(_map, "diamonds", global.diamonds);
+ds_map_add(_map, "diamonds_collected", global.diamonds_collected);
 ds_map_add(_map, "spread", global.spread);
 ds_map_add(_map, "reload_rate", global.reload_rate);
 ds_map_add(_map, "gun_damage", global.gun_damage);

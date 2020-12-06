@@ -44,11 +44,6 @@ tml_aim = false;
 total_coins_collected = global.coins;
 coins_collected_level = 0;
 
-for (var i = 0; i < 5; i++)
-{
-	gem_collected[i] = false;
-}
-
 // damage variables
 damage_ticker = 0;
 
@@ -64,5 +59,3 @@ vitality = global.player_vitality;
 max_hp = vitality * 4;
 spd_walk = (agility / 5) * SPD_WALK;
 spd_jump = (agility / 5) * SPD_JUMP;
-
-total_ammo = 60;

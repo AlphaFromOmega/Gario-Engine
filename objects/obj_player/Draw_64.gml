@@ -25,15 +25,9 @@ if (state != PLAYERSTATE.CUTSCENE)
 	draw_set_valign(fa_center);
 	draw_set_font(fn_general);
 	scr_textborder(PANEL_MARGIN + sprite_get_width(spr_coin), PANEL_MARGIN + 80, string(coins_collected_level), c_white, c_black);
-	draw_sprite(spr_ammo, 0, PANEL_MARGIN, PANEL_MARGIN + 120);
-	draw_set_halign(fa_left);
-	draw_set_valign(fa_center);
-	draw_set_font(fn_general);
-	scr_textborder(PANEL_MARGIN + sprite_get_width(spr_ammo), PANEL_MARGIN + 120, string(total_ammo), c_white, c_black);
-	
 	for (i = 0; i < 5; i++)
 	{
-		if (!gem_collected[4 - i])
+		if (!diamonds_collected[4 - i])
 		{
 			draw_set_alpha(0.25);
 		}

@@ -23,6 +23,7 @@ if (global.loadgame)
 			global.player_fortitude = _map[? "fortitude"];
 			global.coins = _map[? "coins"] + 40000;
 			global.diamonds = _map[? "diamonds"] + 200;
+			global.diamonds_collected = _map[? "diamonds_collected"];
 			global.spread = _map[? "spread"];
 			global.reload_rate = _map[? "reload_rate"];
 			global.gun_damage = _map[? "gun_damage"];

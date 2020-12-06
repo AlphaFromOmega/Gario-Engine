@@ -22,7 +22,7 @@ for (var i = 0; i <= MAXLEVELS; i++)
 {
 	for (var j = 0; j < 5; j++)
 	{
-		global.gem_collected[i, j] = false;
+		global.diamonds_collected[i, j] = false;
 	}
 }
 
