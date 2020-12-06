@@ -107,6 +107,8 @@ function sta_enemy_hit()
 		var i;
 		for (i = 0; i < 10; i += 1) {
 			coin = instance_create_layer(x, y, "Entities", obj_coin);
+			coin.dynamic = true;
+			coin.uncollectable = 20;
 			coin.vsp = random_range(-4, -12);
 			coin.hsp = random_range(-6, 6);
 		}

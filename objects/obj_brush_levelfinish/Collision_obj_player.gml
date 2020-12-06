@@ -7,7 +7,7 @@ if (obj_transition.mode == TRANS_MODE.OFF)
 	}
 	global.current_level = obj_camera.level_id;
 	global.music = NOMUSIC;
-	global.coins += coins_collected_level;
+	global.coins += other.coins_collected_level;
 	scr_slideTransition(TRANS_MODE.GOTO, wipeout, wipein, rm_map);
 	instance_destroy();
 }

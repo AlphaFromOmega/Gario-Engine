@@ -14,6 +14,8 @@ enum PLAYERSTATE
 	DIEAIR,
 	CUTSCENE
 }
+gui_width = display_get_gui_width();
+gui_height = display_get_gui_height();
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
