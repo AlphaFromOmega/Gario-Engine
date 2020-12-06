@@ -59,3 +59,5 @@ vitality = global.player_vitality;
 max_hp = vitality * 4;
 spd_walk = (agility / 5) * SPD_WALK;
 spd_jump = (agility / 5) * SPD_JUMP;
+
+total_ammo = 60;
