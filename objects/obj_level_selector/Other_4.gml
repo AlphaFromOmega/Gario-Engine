@@ -23,7 +23,16 @@ if (global.loadgame)
 			global.player_fortitude = _map[? "fortitude"];
 			global.coins = _map[? "coins"] + 40000;
 			global.diamonds = _map[? "diamonds"] + 200;
-			global.diamonds_collected = _map[? "diamonds_collected"];
+			var _diamonds_collected = _map[? "diamonds_collected"];
+			for (var j = 0; j < ds_list_size(_diamonds_collected); j++)
+			{
+				var _diamondpworld = _diamonds_collected[| j];
+				for (var k = 0; k < ds_list_size(_diamondpworld); k++)
+				{
+					var _diamond_collect = _diamondpworld[| k];
+					global.diamonds_collected[j, k] = _diamond_collect;
+				}
+			}
 			global.spread = _map[? "spread"];
 			global.reload_rate = _map[? "reload_rate"];
 			global.gun_damage = _map[? "gun_damage"];
