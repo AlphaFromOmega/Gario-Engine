@@ -1,6 +1,6 @@
 #macro SPD_WALK 3.5
 #macro SPD_GRAVITY 0.4
-#macro SPD_JUMP 10
+#macro SPD_JUMP 11
 
 enum PLAYERSTATE
 {
