@@ -7,6 +7,12 @@ draw_set_halign(fa_left);
 draw_set_font(fn_menu);
 scr_textborder(PANEL_MARGIN + sprite_get_width(spr_coin), gui_height - 48, string(global.coins), c_white, c_black);
 
+draw_sprite(spr_diamond, 0, PANEL_MARGIN, gui_height - 88);
+draw_set_valign(fa_center);
+draw_set_halign(fa_left);
+draw_set_font(fn_menu);
+scr_textborder(PANEL_MARGIN + sprite_get_width(spr_diamond), gui_height - 88, string(global.diamonds), c_white, c_black);
+
 scr_nineSlice(spr_9sliceui, menu_x, -16, gui_width + 16, gui_height + 16);
 
 for (var i = 0; i < menu_items; i++)
