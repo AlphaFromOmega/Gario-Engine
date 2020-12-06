@@ -18,6 +18,7 @@ ds_map_add(_map, "agility", global.player_agility);
 ds_map_add(_map, "fortitude", global.player_fortitude);
 ds_map_add(_map, "coins", global.coins);
 ds_map_add(_map, "diamonds", global.diamonds);
+
 ds_map_add(_map, "diamonds_collected", global.diamonds_collected);
 ds_map_add(_map, "spread", global.spread);
 ds_map_add(_map, "reload_rate", global.reload_rate);
