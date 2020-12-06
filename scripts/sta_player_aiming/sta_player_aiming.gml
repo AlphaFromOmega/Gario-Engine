@@ -122,7 +122,7 @@ function sta_player_aiming()
 		}
 		else
 		{
-			reload = 60;
+			reload = global.reload_rate;
 		}
 	}
 

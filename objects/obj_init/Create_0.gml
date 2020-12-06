@@ -12,6 +12,12 @@ global.targetDir = -1;
 global.coins = 0;
 global.diamonds = 0;
 global.current_level = 0;
+global.reload_rate = 60;
+global.spread = 15;
+global.gun_damage = 1;
+global.cuckmonster = false;
+global.bullet_count = 1;
+
 for (var i = 0; i <= MAXLEVELS; i++)
 {
 	for (var j = 0; j < 5; j++)
@@ -39,4 +45,3 @@ global.player_vitality = 5;
 global.player_strength = 5;
 global.player_agility = 5;
 global.player_fortitude = 5;
-

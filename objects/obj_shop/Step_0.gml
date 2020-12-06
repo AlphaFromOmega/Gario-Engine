@@ -146,7 +146,9 @@ switch (mode)
 				{
 					success = scr_shop_buy(menu_cost[menu_cursor]);
 					if (success) {
-						shop_upgr_shot_increase += 1;	
+						shop_upgr_shot_increase += 1;
+						global.spread /= 2;
+						global.bullet_count += 2;
 					}
 					break;
 				}
@@ -155,6 +157,7 @@ switch (mode)
 					success = scr_shop_buy(menu_cost[menu_cursor]);
 					if (success) {
 						shop_upgr_damage += 1;	
+						global.gun_damage += 1;
 					}
 					break;
 				}
@@ -163,6 +166,7 @@ switch (mode)
 					success = scr_shop_buy(menu_cost[menu_cursor]);
 					if (success) {
 						shop_upgr_faster_reload += 1;	
+						global.reload_rate -= 10;
 					}
 					break;
 				}
@@ -181,6 +185,7 @@ switch (mode)
 					success = scr_shop_buy(menu_cost[menu_cursor]);
 					if (success) {
 						shop_extr_cuck += 1;	
+						global.cuckmonster = true;
 					}
 					break;
 				}
@@ -208,6 +213,7 @@ switch (mode)
 					success = scr_shop_buy_d(menu_cost[menu_cursor]);
 					if (success) {
 						shop_guru_luck += 1;	
+						global.player_luck += 1;
 					}
 					break;
 				}
@@ -216,6 +222,7 @@ switch (mode)
 					success = scr_shop_buy_d(menu_cost[menu_cursor]);
 					if (success) {
 						shop_guru_vitality += 1;	
+						global.player_vitality += 1;
 					}
 					break;
 				}
@@ -223,7 +230,8 @@ switch (mode)
 				{
 					success = scr_shop_buy_d(menu_cost[menu_cursor]);
 					if (success) {
-						shop_guru_strength += 1;	
+						shop_guru_strength += 1;
+						global.player_strength += 1;
 					}
 					break;
 				}
@@ -231,7 +239,8 @@ switch (mode)
 				{
 					success = scr_shop_buy_d(menu_cost[menu_cursor]);
 					if (success) {
-						shop_guru_agility += 1;	
+						shop_guru_agility += 1;
+						global.player_agility += 1;
 					}
 					break;
 				}
@@ -240,6 +249,7 @@ switch (mode)
 					success = scr_shop_buy_d(menu_cost[menu_cursor]);
 					if (success) {
 						shop_guru_fortitude += 1;	
+						global.player_fortitude += 1;
 					}
 					break;
 				}
