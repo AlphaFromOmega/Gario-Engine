@@ -11,85 +11,25 @@ if (newmode != -1)
 	{
 		case SHOPMENU.DEFAULT:
 		{
-			menu[0] = "Gary Boosts";
-			menu[1] = "Upgrades";
-			menu[2] = "Extras";
-			menu[3] = "Exit";
+			menu[3] = "Item2";
+			menu[2] = "Item";
+			menu[1] = "Folder2";
+			menu[0] = "Folder";
 			menu_items = 4;
-			menu_cost[0] = 0;
-			menu_cost[1] = 0;
-			menu_cost[2] = 0;
-			menu_cost[3] = 0;
 			break;
 		}
-		case SHOPMENU.GURU:
+		case SHOPMENU.TEST:
 		{
-			menu_items = 0;
-			if (shop_guru_luck < shop_stat_limit) {
-				menu[menu_items] = "Luck";
-				menu_cost[menu_items] = shop_stat_cost[shop_guru_luck];
-				menu_items += 1;
-			}
-			if (shop_guru_vitality < shop_stat_limit) {
-				menu[menu_items] = "Health";
-				menu_cost[menu_items] = shop_stat_cost[shop_guru_vitality];
-				menu_items += 1;
-			}
-			if (shop_guru_strength < shop_stat_limit) {
-				menu[menu_items] = "Strength";
-				menu_cost[menu_items] = shop_stat_cost[shop_guru_strength];
-				menu_items += 1;
-			}
-			if (shop_guru_agility < shop_stat_limit) {
-				menu[menu_items] = "Speed";
-				menu_cost[menu_items] = shop_stat_cost[shop_guru_agility];
-				menu_items += 1;
-			}
-			if (shop_guru_fortitude < shop_stat_limit) {
-				menu[menu_items] = "DmgResist";
-				menu_cost[menu_items] = shop_stat_cost[shop_guru_fortitude];
-				menu_items += 1;
-			}
-			menu[menu_items] = "Back";
-			menu_cost[menu_items] = 0;
-			menu_items += 1;
+			menu[1] = "itemsagain";
+			menu[0] = "otherstuff";
+			menu_items = 2;
 			break;
 		}
-		case SHOPMENU.UPGRADES:
+		case SHOPMENU.TEST2:
 		{
-			menu_items = 0;
-			if (shop_upgr_faster_reload < shop_fast_limit) {
-				menu[menu_items] = "FastReload";
-				menu_cost[menu_items] = shop_fast_cost[shop_upgr_faster_reload];
-				menu_items += 1;
-			}
-			if (shop_upgr_shot_increase < shop_shot_incr_limit) {
-				menu[menu_items] = "Shot++";
-				menu_cost[menu_items] = shop_shot_incr[shop_upgr_shot_increase];
-				menu_items += 1;
-			}
-			if (shop_upgr_damage < shop_damage_incr) {
-				menu[menu_items] = "Damage++";
-				menu_cost[menu_items] = shop_damage_incr[shop_upgr_damage];
-				menu_items += 1;
-			}
-			menu[menu_items] = "Back";
-			menu_cost[menu_items] = 0;
-			menu_items += 1;
-			break;
-		}
-		case SHOPMENU.EXTRAS:
-		{
-			menu_items = 0;
-			if (shop_extr_cuck < shop_cuck_limit) {
-				menu[menu_items] = "Cuckmonster";
-				menu_cost[menu_items] = shop_cuck_cost[shop_extr_cuck];
-				menu_items += 1;
-			}
-			menu[menu_items] = "Back";
-			menu_cost[menu_items] = 0;
-			menu_items += 1;
-			break;
+			menu[1] = "morestuff";
+			menu[0] = "thetest2stuff";
+			menu_items = 2;
 		}
 	}
 }
@@ -102,60 +42,29 @@ switch (mode)
 		{
 			switch (menu_cursor)
 			{
-				case 0: //GARY BOOSTS
+				case 0:
 				{
-					newmode = SHOPMENU.GURU;
+					newmode = SHOPMENU.TEST
 					break;
 				}
-				case 1: //UPGRADES
+				case 1:
 				{
-					newmode = SHOPMENU.UPGRADES;
+					newmode = SHOPMENU.TEST2
 					break;
 				}
-				case 2: //EXTRAS
+				case 2:
 				{
-					newmode = SHOPMENU.EXTRAS;
-				}
-				case 3: //EXIT
-				{
-					scr_slideTransition(TRANS_MODE.GOTO, wipeout, wipein, rm_map);
-				}
-			}
-		}
-		break;
-	}
-	case SHOPMENU.UPGRADES:
-	{
-		if (keyboard_check_pressed(vk_space))
-		{
-			switch (menu[menu_cursor])
-			{
-				case "Back":
-				{
-					newmode = SHOPMENU.DEFAULT;
-					break;
-				}
-				case "Shot++":
-				{
-					success = scr_shop_buy(menu_cost[menu_cursor]);
-					if (success) {
-						shop_upgr_shot_increase += 1;	
+					if (scr_shop_buy(500))
+					{
+						show_debug_message("Buy Successful");
 					}
 					break;
 				}
-				case "Damage++":
+				case 3:
 				{
-					success = scr_shop_buy(menu_cost[menu_cursor]);
-					if (success) {
-						shop_upgr_damage += 1;	
-					}
-					break;
-				}
-				case "FastReload":
-				{
-					success = scr_shop_buy(menu_cost[menu_cursor]);
-					if (success) {
-						shop_upgr_faster_reload += 1;	
+					if (scr_shop_buy(1000))
+					{
+						show_debug_message("Buy Successful");
 					}
 					break;
 				}
@@ -163,23 +72,40 @@ switch (mode)
 		}
 		break;
 	}
-	case SHOPMENU.EXTRAS:
+	case SHOPMENU.TEST:
 	{
 		if (keyboard_check_pressed(vk_space))
 		{
-			switch (menu[menu_cursor])
+			switch (menu_cursor)
 			{
-				case "Cuckmonster":
+				case 0:
 				{
-					success = scr_shop_buy(menu_cost[menu_cursor]);
-					if (success) {
-						shop_extr_cuck += 1;	
-					}
+					newmode = SHOPMENU.TEST
 					break;
 				}
-				case "Back":
+				case 1:
 				{
-					newmode = SHOPMENU.UPGRADES;
+					newmode = SHOPMENU.TEST2
+					break;
+				}
+			}
+		}
+		break;
+	}
+	case SHOPMENU.TEST2:
+	{
+		if (keyboard_check_pressed(vk_space))
+		{
+			switch (menu_cursor)
+			{
+				case 0:
+				{
+					newmode = SHOPMENU.TEST
+					break;
+				}
+				case 1:
+				{
+					newmode = SHOPMENU.TEST2
 					break;
 				}
 			}

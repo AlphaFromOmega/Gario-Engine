@@ -6,6 +6,6 @@ if (curtrack != global.music)
 	if (global.music != NOMUSIC)
 	{
 		curtrack = global.music;
-		audio_play_sound(curtrack, 1000, true);
+		audio_play_sound(curtrack, 1, true);
 	}
 }

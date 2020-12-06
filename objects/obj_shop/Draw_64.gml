@@ -26,12 +26,4 @@ for (var i = 0; i < menu_items; i++)
 	var _xx = menu_x + _margin;
 	var _yy = menu_y + (menu_itemheight * (i * 2));
 	scr_textborder(_xx, _yy, _txt, _col, c_black);
-	
-	if (menu_cost[i] == 0) {
-		//do nothing
-	}
-	else {
-		draw_sprite(spr_coin, 0, gui_width - PANEL_MARGIN, _yy);
-		scr_textborder(gui_width - PANEL_MARGIN - 40, _yy, string(menu_cost[i]), _col, c_black);
-	}
 }
