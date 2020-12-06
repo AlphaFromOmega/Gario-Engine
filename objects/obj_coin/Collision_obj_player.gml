@@ -1,8 +1,12 @@
 /// @description Insert description here
-// You can write your code in this editor
-with (other)
-{
-	coins_collected_level += 1;	
-}
+// You can write your code in this editorif
 
-instance_destroy();
+if (uncollectable == 0)
+{
+	with (other)
+	{
+		coins_collected_level += 1;	
+	}
+	audio_play_sound(sfx_coin, 1, false);
+	instance_destroy();
+}
