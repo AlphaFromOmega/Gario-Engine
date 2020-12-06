@@ -1,18 +1,19 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sta_roomba_move()
+/// @description Insert description here
+// You can write your code in this editor
+if (dynamic)
 {
 	var p1,p2,p3,bbox_side;
 	// Calculate Movement
-	move = dir * walkspeed;
-	hsp = move;
+	hsp /= 1.01;
 	vsp += SPD_GRAVITY;
-	
-	image_xscale = dir;
 	
 	// Check Center Frame
 	var grounded = (scr_inFloor(tilemap,x,bbox_bottom+1, true) >= 0);
-
+	if (grounded)
+	{
+		hsp /= 1.02;
+	}
+	
 	//Re apply fractions
 	hsp += hsp_fraction;
 	vsp += vsp_fraction;
@@ -29,8 +30,7 @@ function sta_roomba_move()
 	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
 	if (position_meeting(bbox_side+hsp, y, obj_brush_roomexit))
 	{
-		dir *= -1;
-		hsp = 0;
+		hsp *= -1;
 	}
 	p1 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top);
 	p2 = tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom);
@@ -45,14 +45,13 @@ function sta_roomba_move()
 		if (hsp > 0)
 		{
 			x = x - (x mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right - x);
-			dir = -1;
+			hsp *= -1;
 		}
 		else
 		{
 			x = x - (x mod TILE_SIZE) - (bbox_left - x);
-			dir = 1;
+			hsp *= -1;
 		}
-		hsp = 0;
 	}
 	x += hsp;
 
@@ -66,7 +65,7 @@ function sta_roomba_move()
 		{
 			if (vsp >= 0) y = y - (y mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_bottom - y);
 			else y = y - (y mod TILE_SIZE) - (bbox_top - y);
-			vsp = 0;
+			vsp *= -0.9;
 		}
 		if (vsp >= 0) // Check if tile is not a slope 
 		{
@@ -75,7 +74,7 @@ function sta_roomba_move()
 			if (p1 == 1) || (p2 == 1)
 			{
 				y = y - (y mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_bottom - y);
-				vsp = 0;
+				vsp *= -0.9;
 			}
 		}
 	}
@@ -86,58 +85,13 @@ function sta_roomba_move()
 	{
 		y += vsp;
 		y -= (floordist + 1);
-		vsp = 0;
+		vsp *= -1;
 		floordist = -1;
 	}
 
 	y += vsp;
-
-	// Walk down slopes
-	if (grounded)
-	{
-		y += abs(floordist) - 1;
-		if ((bbox_bottom % TILE_SIZE) == TILE_SIZE - 1) // If at base of current tile
-		{
-			if (tilemap_get_at_pixel(tilemap, x, bbox_bottom + 1) > 1) // If slope continues
-			{
-				y += abs(scr_inFloor(tilemap, x, bbox_bottom + 1, true));
-			}
-		}
-	}
-	if (attack_cooldown > 0)
-	{
-		if (instance_exists(obj_player) &&  abs(obj_player.x - x) < 256)
-		{
-			dir = -sign(obj_player.x - x);
-			if (obj_player.x - x == 0)
-			{
-				dir = 1;
-			}
-		}
-		attack_cooldown--;
-	}
-	else
-	{
-		if (instance_exists(obj_player) && abs(obj_player.y - y) < 64 && obj_player.hp > 0)
-		{
-			if (abs(obj_player.x - x) < 256 && abs(obj_player.x - x) > 32)
-			{
-				dir = sign(obj_player.x - x);
-				if (obj_player.x - x == 0)
-				{
-					dir = 1;
-				}
-			}
-			if (abs(obj_player.x - x) < 320)
-			{
-				if (obj_player.x - x != 0)
-				{
-					image_xscale = sign(obj_player.x - x);
-				}
-				sprite_index = spr_roomba_shoot;
-				state = ROOMBASTATE.ATTACK;
-				attack_cooldown = 120;
-			}
-		}
-	}
+}
+if (uncollectable > 0)
+{
+	uncollectable--;
 }

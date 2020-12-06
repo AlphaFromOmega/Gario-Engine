@@ -106,6 +106,13 @@ function sta_roomba_hit()
 	{
 		state = ROOMBASTATE.DEAD;
 		audio_play_sound(sfx_roomba_death, 1, false);
+		for (var i = 0; i < 5; i++) {
+			ammo = instance_create_layer(x, y, "Entities", obj_ammo);
+			ammo.dynamic = true;
+			ammo.uncollectable = 20;
+			ammo.vsp = random_range(-4, -12);
+			ammo.hsp = random_range(-6, 6);	
+		}
 		sprite_index = spr_roomba_elec;
 	}
 	hitstatecounter--;
