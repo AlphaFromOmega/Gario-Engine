@@ -13,6 +13,16 @@ function scr_hit_player(_damage, _hkb, _vkb)
 				var _grounded = (scr_inFloor(tilemap,x,bbox_bottom+1, true) >= 0);
 				if (_damage >= hp)
 				{
+					// he dead broh
+					
+					var i;
+					for (i = 0; i < obj_player.coins_collected_level; i += 1) {
+						coin = instance_create_layer(x, y, "Entities", obj_coin);
+						coin.vsp = random_range(-4, -12);
+						coin.hsp = random_range(-6, 6);
+					}
+					obj_player.coins_collected_level = 0;
+					
 					global.music = NOMUSIC;
 					hp = 0;
 					if (_grounded)

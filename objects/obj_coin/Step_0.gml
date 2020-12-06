@@ -12,6 +12,10 @@ image_xscale = dir;
 // Check Center Frame
 var grounded = (scr_inFloor(tilemap,x,bbox_bottom+1, true) >= 0);
 
+if (grounded) {
+	hsp = 0;	
+}
+
 //Re apply fractions
 	
 hsp += hsp_fraction;
